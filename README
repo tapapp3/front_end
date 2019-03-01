@@ -1,0 +1,4 @@
+npm install react-navigation
+npm install axios
+react-native link react-navigation
+                  react-native-gesture-handler
