@@ -1,9 +1,13 @@
 import React from 'reactn'
-import { View, KeyboardAvoidingView, Dimensions, ScrollView, Keyboard, Image } from 'react-native'
+import { View, KeyboardAvoidingView, Dimensions, ScrollView, Keyboard, Image, TouchableOpacity, Text } from 'react-native'
 import {host} from '../../secrets'
 import styles from '../../assets/styles'
 import {scaleModerate} from '../../utils/scale'
 import {RkTextInput} from 'react-native-ui-kitten'
+import {signInThunk} from '../navigation/thunks'
+// import console = require('console');
+
+
 class Login extends React.Component {
 
     constructor() {
@@ -13,9 +17,13 @@ class Login extends React.Component {
             password: ''
         }
     }
-    // onSubmit(){
-    //     signInThunk(this.state)
-    // }
+     async signin(){
+         try{
+         await signInThunk({email: this.state.email, password: this.state.password})
+         }catch(err){
+             console.log(err)
+         }
+     }
     renderImage() {
         const screenSize = Dimensions.get('window')
         const imageSize = {
@@ -56,6 +64,11 @@ class Login extends React.Component {
                 secureTextEntry
                 />
                 </View>
+                <TouchableOpacity
+                onPress={() => this.signin()}
+                >
+                    <Text>Sign In</Text>
+                </TouchableOpacity>
                 </ScrollView>
             </KeyboardAvoidingView>
         )

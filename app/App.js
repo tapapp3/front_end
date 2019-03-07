@@ -8,7 +8,6 @@
  */
 
 import React, {Component} from 'reactn';
-import {Platform, StyleSheet, Text, View} from 'react-native';
 import AppContainer from './AppContainer'
 
 import {setGlobal} from 'reactn'
