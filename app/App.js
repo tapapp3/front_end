@@ -11,10 +11,12 @@ import React, {Component} from 'reactn';
 import AppContainer from './AppContainer'
 
 import {setGlobal} from 'reactn'
+import { userThunkSignIn } from './navigation/thunks';
 
 setGlobal({
     data: 'null',
-    hello: ['the', 'cat', 'ran']
+    hello: ['the', 'cat', 'ran'],
+    user: async () => await userThunkSignIn()
 })
 
 

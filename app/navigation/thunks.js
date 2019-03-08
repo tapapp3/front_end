@@ -17,3 +17,12 @@ export const signInThunk = async (obj) => {
     }catch(err){
     console.log(err)}
 }
+
+export const userThunkSignIn = async () => {
+    try{
+    const {data} = await axios.get(`${host}/auth/me`)
+    return data
+    }catch(err){
+        console.log(err)
+    }
+}

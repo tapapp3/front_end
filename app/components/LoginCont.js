@@ -4,7 +4,7 @@ import {host} from '../../secrets'
 import styles from '../../assets/styles'
 import {scaleModerate} from '../../utils/scale'
 import {RkTextInput} from 'react-native-ui-kitten'
-import {signInThunk} from '../navigation/thunks'
+import {signInThunk, userThunkSignIn} from '../navigation/thunks'
 // import console = require('console');
 
 
@@ -17,9 +17,14 @@ class Login extends React.Component {
             password: ''
         }
     }
+    async componentDidMount(){
+        const data = await userThunkSignIn()
+        console.log('props', this.props)
+    }
      async signin(){
          try{
          await signInThunk({email: this.state.email, password: this.state.password})
+         this.props.navigation.navigate('Startup')
          }catch(err){
              console.log(err)
          }
