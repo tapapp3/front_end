@@ -1,4 +1,4 @@
-import { scaleVertical } from '../utils/scale';
+import { scaleVertical, scale } from '../utils/scale';
 import { StyleSheet, Platform } from 'react-native';
 import {RkStyleSheet} from 'react-native-ui-kitten';
 
@@ -41,7 +41,7 @@ export default RkStyleSheet.create(theme => ({
   },
   recipeImage: {
     borderRadius: 25,
-    width: 300,
+    width: scale(350),
     alignSelf: 'center',
   },
   recipescard: {
@@ -128,7 +128,7 @@ export default RkStyleSheet.create(theme => ({
   },
   root: {
     paddingTop: Platform.OS === 'ios' ? 20 : 0,
-    backgroundColor: theme.colors.screen.base,
+    backgroundColor: 'red',
   },
   textDrawer: {
     fontSize: 15,
@@ -173,4 +173,14 @@ export default RkStyleSheet.create(theme => ({
     width: 20,
     height: 20,
   },
+  bc: {
+    flex: 1,
+    backgroundColor: '#DEB887'
+  },
+  customFont: {
+    fontFamily: "Srisakdi-Bold",
+    fontSize: 20,
+    textAlign: 'center', 
+    backgroundColor: '#D2B48C'
+  }
 }));

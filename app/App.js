@@ -9,16 +9,13 @@
 
 import React, {Component} from 'reactn';
 import AppContainer from './AppContainer'
-
 import {setGlobal} from 'reactn'
-import { userThunkSignIn } from './navigation/thunks';
+// import console = require('console');
 
 setGlobal({
-    data: 'null',
-    hello: ['the', 'cat', 'ran'],
-    user: async () => await userThunkSignIn()
+  user: {},
+  beers: []
 })
-
 
 export default class App extends Component {
   render() {
