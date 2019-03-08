@@ -3,7 +3,7 @@ import StartupNav from './navigation/StartupNav';
 
 const AppNavigator = createStackNavigator(
   {
-    Startup: { screen: StartupNav },
+    StartupNav: { screen: StartupNav },
   },
   {
     headerMode: 'none',

@@ -14,16 +14,28 @@ class Login extends React.Component {
         super()
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            loggedIn: false
         }
     }
     async componentDidMount(){
         const data = await userThunkSignIn()
-        console.log('props', this.props)
+        this.setGlobal({
+            user: data
+        })
+        if(!this.global.user.email){
+            this.props.navigation.navigate('Login')
+            this.setState({
+                loggedIn: true
+            })
+        }else{
+            this.props.navigation.navigate('Startup')
+        }
     }
      async signin(){
          try{
-         await signInThunk({email: this.state.email, password: this.state.password})
+            const obj = {email: this.state.email, password: this.state.password}
+         await signInThunk(obj)
          this.props.navigation.navigate('Startup')
          }catch(err){
              console.log(err)
@@ -44,6 +56,11 @@ class Login extends React.Component {
       )
     }
     render() {
+        if(!this.state.loggedIn){
+            return(
+                <View><Text></Text></View>
+            )
+        }
         return (
             <KeyboardAvoidingView
             onStartShouldSetResponder={() => true}

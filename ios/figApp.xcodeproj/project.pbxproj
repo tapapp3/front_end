@@ -40,6 +40,10 @@
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 		0264974B1EE0478E97A86AFB /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFBBFFAF9DD41DA80928545 /* libRNGestureHandler.a */; };
+		6DCAEF86A79E41F69D7E40CC /* ZCOOLQingKeHuangYou-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1077E1C8C96A47B68C8173E6 /* ZCOOLQingKeHuangYou-Regular.ttf */; };
+		4176A620E618446ABC7E07CF /* Srisakdi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E80D8F18801F493AB81F845F /* Srisakdi-Regular.ttf */; };
+		F181C9F506534643ACDB4F46 /* Srisakdi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B852D51A2C834A6A9C1EFB86 /* Srisakdi-Regular.ttf */; };
+		B19FF683F7B941998F8DEA89 /* Srisakdi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 063AE1A2B36E4CDE80DE3051 /* Srisakdi-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -349,6 +353,10 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		B9EBB2CF9D5142D7A54F414A /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; name = "RNGestureHandler.xcodeproj"; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		7DFBBFFAF9DD41DA80928545 /* libRNGestureHandler.a */ = {isa = PBXFileReference; name = "libRNGestureHandler.a"; path = "libRNGestureHandler.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		1077E1C8C96A47B68C8173E6 /* ZCOOLQingKeHuangYou-Regular.ttf */ = {isa = PBXFileReference; name = "ZCOOLQingKeHuangYou-Regular.ttf"; path = "../assets/fonts/ZCOOL/ZCOOLQingKeHuangYou-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E80D8F18801F493AB81F845F /* Srisakdi-Regular.ttf */ = {isa = PBXFileReference; name = "Srisakdi-Regular.ttf"; path = "../assets/fonts/SRI/Srisakdi-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B852D51A2C834A6A9C1EFB86 /* Srisakdi-Regular.ttf */ = {isa = PBXFileReference; name = "Srisakdi-Regular.ttf"; path = "../assets/fonts/Srisakdi/Srisakdi-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		063AE1A2B36E4CDE80DE3051 /* Srisakdi-Bold.ttf */ = {isa = PBXFileReference; name = "Srisakdi-Bold.ttf"; path = "../assets/fonts/Srisakdi/Srisakdi-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -589,6 +597,7 @@
 				00E356EF1AD99517003FC87E /* figAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				D1A0134CE8F941B8BE0ECCA8 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -614,6 +623,18 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		D1A0134CE8F941B8BE0ECCA8 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				1077E1C8C96A47B68C8173E6 /* ZCOOLQingKeHuangYou-Regular.ttf */,
+				E80D8F18801F493AB81F845F /* Srisakdi-Regular.ttf */,
+				B852D51A2C834A6A9C1EFB86 /* Srisakdi-Regular.ttf */,
+				063AE1A2B36E4CDE80DE3051 /* Srisakdi-Bold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -1061,6 +1082,10 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				6DCAEF86A79E41F69D7E40CC /* ZCOOLQingKeHuangYou-Regular.ttf in Resources */,
+				4176A620E618446ABC7E07CF /* Srisakdi-Regular.ttf in Resources */,
+				F181C9F506534643ACDB4F46 /* Srisakdi-Regular.ttf in Resources */,
+				B19FF683F7B941998F8DEA89 /* Srisakdi-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
