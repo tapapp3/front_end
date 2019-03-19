@@ -8,9 +8,10 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "metro": "^0.53.1",
     "navigation": "^5.1.0",
     "react": "^16.8.4",
-    "react-native": "^0.58.6",
+    "react-native": "^0.59.1",
     "react-native-ui-kitten": "^3.1.2",
     "react-navigation": "^3.3.2",
     "reactn": "^1.0.0"
@@ -19,13 +20,16 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "24.1.0",
     "jest": "24.1.0",
-    "metro-react-native-babel-preset": "0.53.0",
+    "metro-react-native-babel-preset": "0.51.0",
     "react-test-renderer": "16.6.3"
   },
   "jest": {
     "preset": "react-native"
   },
   "rnpm": {
-    "assets": ["assets/fonts/ZCOOL", "assets/fonts/Srisakdi"]
+    "assets": [
+      "assets/fonts/ZCOOL",
+      "assets/fonts/Srisakdi"
+    ]
   }
 }
