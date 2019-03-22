@@ -14,7 +14,9 @@ import {setGlobal} from 'reactn'
 
 setGlobal({
   user: {},
-  beers: []
+  beers: [],
+  distros:[],
+  oneDistro: {}
 })
 
 export default class App extends Component {
